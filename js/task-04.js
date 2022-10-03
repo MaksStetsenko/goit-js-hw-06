@@ -7,7 +7,7 @@ const counterValue = document.querySelector("#value");
 
 //==========================================
 
-counterValue.value = counterValue.textContent = 2;
+counterValue.value = counterValue.textContent = 0;
 
 //==========================================
 
