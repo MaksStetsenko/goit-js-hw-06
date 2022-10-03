@@ -4,7 +4,7 @@ const userName = document.querySelector("#name-output");
 
 //==================================================
 
-const nameInput = () => {
+const nameOnInput = () => {
   if (userNameInput.value !== userName.textContent) {
     userName.textContent = userNameInput.value;
   }
@@ -12,4 +12,4 @@ const nameInput = () => {
 
 //==================================================
 
-userNameInput.addEventListener("input", nameInput);
+userNameInput.addEventListener("input", nameOnInput);

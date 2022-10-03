@@ -2,7 +2,7 @@ const validation = document.querySelector("#validation-input");
 
 //==================================
 
-const validCheck = () => {
+const validCheckOnBlur = () => {
   validation.classList.remove("valid");
   validation.classList.remove("invalid");
 
@@ -13,4 +13,4 @@ const validCheck = () => {
   }
 };
 
-validation.addEventListener("blur", validCheck);
+validation.addEventListener("blur", validCheckOnBlur);

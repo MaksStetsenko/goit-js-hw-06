@@ -12,11 +12,11 @@ const getRandomHexColor = () => {
     .padStart(6, 0)}`;
 };
 
-const changeColor = () => {
+const changeColorOnClick = () => {
   colorSet.textContent = getRandomHexColor();
   widget.style.backgroundColor = `${getRandomHexColor()}`;
 };
 
 //=================================================
 
-changingBtn.addEventListener("click", changeColor);
+changingBtn.addEventListener("click", changeColorOnClick);

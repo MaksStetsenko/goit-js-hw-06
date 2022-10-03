@@ -11,18 +11,18 @@ counterValue.value = counterValue.textContent = 2;
 
 //==========================================
 
-const decrementValue = () => {
+const decrementValueOnClick = () => {
   counterValue.value -= 1;
   counterValue.textContent = counterValue.value;
 };
 
-const incrementValue = () => {
+const incrementValueOnClick = () => {
   counterValue.value += 1;
   counterValue.textContent = counterValue.value;
 };
 
 //==========================================
 
-decrement.addEventListener("click", decrementValue);
+decrement.addEventListener("click", decrementValueOnClick);
 
-increment.addEventListener("click", incrementValue);
+increment.addEventListener("click", incrementValueOnClick);

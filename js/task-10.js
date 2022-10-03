@@ -14,9 +14,9 @@ const getRandomHexColor = () => {
     .padStart(6, 0)}`;
 };
 
-//==============For create div`s=====================
+//==============For delete div`s=====================
 
-const creatingOfBlocks = () => {
+const destroyingOfBlocksOnClick = () => {
   let newBlocks = document.querySelectorAll(".item");
   for (let i = 0; i < newBlocks.length; i++) {
     let boxesToDelete = [i];
@@ -25,6 +25,12 @@ const creatingOfBlocks = () => {
       item.remove();
     });
   }
+};
+
+//==============For create div`s=====================
+
+const creatingOfBlocksOnClick = () => {
+  destroyingOfBlocksOnClick();
 
   for (let i = 0; i < numberOfBlocks.value; i++) {
     let boxesToCreate = [i];
@@ -39,21 +45,8 @@ const creatingOfBlocks = () => {
   }
 };
 
-//==============For delete div`s=====================
-
-const destroyingOfBlocks = () => {
-  let newBlocks = document.querySelectorAll(".item");
-  for (let i = 0; i < newBlocks.length; i++) {
-    let boxesToDelete = [i];
-    boxesToDelete.forEach((item) => {
-      item = document.querySelector(".item");
-      item.remove();
-    });
-  }
-};
-
 //========================================
 
-createBlockBtn.addEventListener("click", creatingOfBlocks);
+createBlockBtn.addEventListener("click", creatingOfBlocksOnClick);
 
-destroyBlockBtn.addEventListener("click", destroyingOfBlocks);
+destroyBlockBtn.addEventListener("click", destroyingOfBlocksOnClick);
