@@ -8,4 +8,4 @@ const fontSizeOnChange = () => {
   text.style.fontSize = `${sizeControl.value}px`;
 };
 
-sizeControl.addEventListener("change", fontSizeOnChange);
+sizeControl.addEventListener("input", fontSizeOnChange);
